@@ -1,11 +1,12 @@
 import './App.css';
-import MainComponent from './concepts/context-with-reducer/MainComponent';
-
+import SingleInputFields from './concepts/dynamic-input-fields/SingleInputFields';
+import InputWithMultipleFields from './concepts/dynamic-input-fields/InputWithMultipleFields';
 
 function App() {
   return (
     <div>
-      <MainComponent></MainComponent>
+        <SingleInputFields></SingleInputFields>
+        <InputWithMultipleFields></InputWithMultipleFields>
     </div>
   );
 }
