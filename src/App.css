@@ -1,0 +1,51 @@
+body {
+  background-color: beige;
+}
+
+.portal-header-content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  background-color: orange;
+  padding: 10px;
+  color: White;
+}
+
+.portal-main-heading {
+  font-size: 30px;
+}
+
+.open-modal-button {
+  border: none;
+}
+
+.modal-div {
+  position: relative;
+  top: 50px;
+  z-index: 1;
+  text-align: center;
+}
+
+.second-div {
+  top: 100px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.modal-style {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFF;
+  padding: 50px;
+  z-index: 1000;
+}
