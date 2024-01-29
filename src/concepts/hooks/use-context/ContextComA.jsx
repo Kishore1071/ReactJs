@@ -1,14 +1,17 @@
 import React from 'react'
 import ContextComB from './ContextComB'
 
-export const SuperHeroName = React.createContext()
+export const SuperHeroNameOne = React.createContext()
+export const SuperHeroNameTwo = React.createContext()
 
 const ContextComA = () => {
   return (
     <div>
-        <SuperHeroName.Provider value={'Superman'}>
+        <SuperHeroNameOne.Provider value={'Superman'}>
+          <SuperHeroNameTwo.Provider value={"Batman"}>
             <ContextComB></ContextComB>
-        </SuperHeroName.Provider>
+          </SuperHeroNameTwo.Provider>
+        </SuperHeroNameOne.Provider>
     </div>
   )
 }
