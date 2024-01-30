@@ -29,6 +29,7 @@ const SimpleReducer = () => {
             <button onClick={() => dispatchCount('Increment')}>Increment</button>
             <button onClick={() => dispatchCount('Decrement')}>Decrement</button>
             <button onClick={() => dispatchCount('Reset')}>Reset</button>
+            <button onClick={() => dispatchCount('njdnjd')}>Some Change</button>
         </div>
     )
 }
