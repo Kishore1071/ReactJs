@@ -49,3 +49,29 @@ body {
   padding: 50px;
   z-index: 1000;
 }
+
+form {
+  position: relative;
+  width: 30%;
+  left: 35%;
+  clear: right;
+}
+
+button {
+  margin: 10px;
+  float: right;
+}
+
+table {
+  /* width: 100%; */
+  clear: right;
+}
+
+table, th, td {
+  border: 1px solid grey;
+}
+
+th, td {
+  padding: 10px;
+}
+
