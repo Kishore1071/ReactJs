@@ -22,7 +22,7 @@ const ProductEdit = () => {
             setPrice(response.data.price)
             setGst(response.data.gst)
         })
-    }, [])
+    }, [id])
 
     const SubmitHandler = event => {
 

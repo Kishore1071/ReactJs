@@ -52,8 +52,9 @@ body {
 
 form {
   position: relative;
-  width: 30%;
-  left: 35%;
+  /* width: 30%; */
+  left: 5%;
+  top: 10px;
   clear: right;
 }
 
