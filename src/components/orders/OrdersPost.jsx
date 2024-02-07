@@ -8,6 +8,7 @@ const OrdersPost = () => {
     const navigate = useNavigate()
 
     const [customers, setCustomers] = useState([])
+
     const [selected_customer, setSelectedCustomer] = useState('')
     const [bill_date, setBillDate] = useState('')
 
@@ -97,7 +98,7 @@ const OrdersPost = () => {
                 <input type="number" value={data.quantity} onChange={event => UpdateProductData(event, index, "quantity")}/>
                 
                 <label htmlFor="">Gst: </label>
-                <input type="number" value={data.gst} onChange={event => UpdateProductData(event, index, "gst")}/>
+                <input type="number" value={data.gst} readOnly/>
                 
             </div>
         )

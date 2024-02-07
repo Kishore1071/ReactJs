@@ -29,7 +29,7 @@ const CustomerEdit = () => {
             setAddress(response.data.address)
         })
         .catch(error => console.log(error))
-    }, [])
+    }, [id])
 
     const SubmitHandler = event => {
 

@@ -72,6 +72,7 @@ const InputWithMultipleFields = () => {
             <div key={index}>
 
                 <label htmlFor="">Sno: {index + 1}  </label>
+
                 <label htmlFor="">First Name: </label>
                 <input type="text" value={data.first_name} onChange={(event) => UpdateFirstName(event, index)}/>
 
@@ -89,9 +90,12 @@ const InputWithMultipleFields = () => {
 
             <button onClick={() => AddNewValue()}>Add Input Field</button>
             <button onClick={() => AddNewOnTop()}>Add Input  on Top</button>
-            <label htmlFor="">Enter Field After</label>
+
+            <label htmlFor="">Enter Field At</label>
             <input type="number" value={selected_index} onChange={(event) => setSelectedIndex(event.target.value)} placeholder='Enter the field number'/>
+
             <button onClick={FieldOnSelectedIndex}>Submit</button>
+            
             {new_input_field}
 
             <div>

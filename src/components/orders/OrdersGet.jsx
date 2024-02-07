@@ -9,7 +9,7 @@ const OrdersGet = () => {
         axios.get('http://127.0.0.1:1000/order')
         .then(response => setOrdersData(response.data))
         .catch(error => console.log(error))
-    })
+    }, [])
 
     let table_data = orders_data.map(order => {
         return (
