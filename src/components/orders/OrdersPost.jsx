@@ -107,6 +107,8 @@ const OrdersPost = () => {
     return (
         <div>
 
+            <button onClick={() => navigate('/all/orders/')}>Back</button>
+
             <form className='orders-form'>
 
                 <div>
