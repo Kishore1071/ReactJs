@@ -14,6 +14,8 @@ import OrdersEdit from './components/orders/OrdersEdit';
 import OrdersView from './components/orders/OrdersView';
 import EmployeeAdd from './components/employees/EmployeeAdd';
 import EmployeeView from './components/employees/EmployeeView';
+import User from './components/users/User';
+import UserList from './components/users/UserList';
 
 function App() {
     return (
@@ -32,6 +34,8 @@ function App() {
                     <Route path='/view/orders/:id/' element={<OrdersView />}/>
                     <Route path='/add/employee/' element={<EmployeeAdd />}/>
                     <Route path='/all/employee/' element={<EmployeeView />}/>
+                    <Route path='/add/user/' element={<User />}/>
+                    <Route path='/all/user/' element={<UserList />}/>
                 </Routes>
             </div>
         </Provider>

@@ -30,6 +30,7 @@ const OrdersView = () => {
         <td>{data.product.price}</td>
         <td>{data.quantity}</td>
         <td>{data.amount}</td>
+        <td>{data.product.gst}</td>
         <td>{data.gst_amount}</td>
         <td>{data.sub_total}</td>
     </tr>)
@@ -46,6 +47,7 @@ const OrdersView = () => {
                         <th>Price/Item</th>
                         <th>Quantity</th>
                         <th>Amount</th>
+                        <th>GST %</th>
                         <th>Gst Amount</th>
                         <th>Sub Total</th>
                     </tr>
