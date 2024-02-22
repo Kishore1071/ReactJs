@@ -16,6 +16,7 @@ import EmployeeAdd from './components/employees/EmployeeAdd';
 import EmployeeView from './components/employees/EmployeeView';
 import User from './components/users/User';
 import UserList from './components/users/UserList';
+import ObjectWithState from './concepts/hooks/use-state/ObjectWithState'
 
 function App() {
     return (
@@ -36,6 +37,7 @@ function App() {
                     <Route path='/all/employee/' element={<EmployeeView />}/>
                     <Route path='/add/user/' element={<User />}/>
                     <Route path='/all/user/' element={<UserList />}/>
+                    <Route path='/state/object/' element={<ObjectWithState />}/>
                 </Routes>
             </div>
         </Provider>
