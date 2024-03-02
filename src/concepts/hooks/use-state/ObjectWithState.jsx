@@ -13,11 +13,11 @@ const ObjectWithState = () => {
             <form>
 
                 <label>Brand</label>
-                <input type="text" value={laptop.brand} onChange={event => setLaptop({... laptop, brand: event.target.value })}/>
+                <input type="text" value={laptop.brand} onChange={event => setLaptop({...laptop, brand: event.target.value })}/>
                 <br />
 
                 <label>Model</label>
-                <input type="text" value={laptop.model} onChange={event => setLaptop({... laptop, model: event.target.value })}/>
+                <input type="text" value={laptop.model} onChange={event => setLaptop({...laptop, model: event.target.value })}/>
 
             </form>
 

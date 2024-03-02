@@ -17,7 +17,7 @@ const OrdersView = () => {
             setOrder(response.data)
         })
         .catch(error => console.log(error))
-    }, [])
+    }, [id])
 
     let ParentData = order !== null && <div>
         <p>Customer: {order.customer.customer_name}</p>
