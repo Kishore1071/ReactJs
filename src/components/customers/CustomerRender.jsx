@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const CustomerRender = ({customer}) => {
+const CustomerRender = ({customer, selected_ids}) => {
 
   const navigate = useNavigate()
   return (
@@ -14,6 +14,9 @@ const CustomerRender = ({customer}) => {
         <td>{customer.address}</td>
         <td>
             <button onClick={() => navigate(`/edit/customers/${customer.id}`)}>Edit</button>
+        </td>
+        <td>
+            <input type="checkbox" onClick={() => selected_ids(customer.id)} />
         </td>
     </tr>
   )
